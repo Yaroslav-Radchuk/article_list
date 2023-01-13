@@ -1,18 +1,18 @@
-.article__list-box {
-  height: 100%;
-  width: 100%;
-}
-
 .article {
   &__list {
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
-    gap: 0 45px;
-    justify-content: flex-start;
-    list-style: none;
-    margin: unset;
-    padding: unset;
+    height: 100%;
+    width: 100%;
+
+    &-box {
+      display: flex;
+      text-align: center;
+      flex-wrap: wrap;
+      gap: 0 45px;
+      justify-content: flex-start;
+      list-style: none;
+      margin: unset;
+      padding: unset;
+    }
 
     &-header {
       position: relative;

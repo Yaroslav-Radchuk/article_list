@@ -7,7 +7,6 @@ import { Article } from '../../data/data';
 import { getArticles } from '../../api/api';
 import { ArticleCard } from '../ArticleCard/ArticleCard';
 import { RingLoader } from 'react-spinners';
-import { height } from '@mui/system';
 
 export const ArticleList: React.FC = () => {
   const [articles, setArticles] = useState<Article[] | []>([]);
@@ -31,7 +30,7 @@ export const ArticleList: React.FC = () => {
   }, []);
 
   return (
-    <div className="article__list-box">
+    <div className="article__list">
       {loading ? (
         <RingLoader
           loading={loading}
@@ -55,7 +54,7 @@ export const ArticleList: React.FC = () => {
           <p className="article__list-header">
             Results: {articlesFilter.length}
           </p>
-          <ul className="article__list">
+          <ul className="article__list-box">
             {articlesFilter.map(item => {
               const summaryCorrect = `${item.summary.slice(0, 150)}...`;
               const titleCorrect = item.title.length > 55
@@ -80,4 +79,4 @@ export const ArticleList: React.FC = () => {
       )}
     </div>
   )
-}
+};

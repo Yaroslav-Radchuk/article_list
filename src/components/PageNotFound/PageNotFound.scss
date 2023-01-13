@@ -1,6 +1,33 @@
-.title-found {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.title {
+  &__found {
+    font-family: 'Montserrat', sans-serif;
+    color: #363636;
+    position: absolute;
+    top: 20%;
+    left: 42.5%;
+    text-align: center;
+  }
+
+  &__img {
+    position: absolute;
+    left: 42%;
+    top: 25%;
+    width: 250px;
+  }
+}
+
+#button {
+  position: absolute;
+  top: 54%;
+  left: 43.2%;
+  color: #363636;
+  border-color: #363636;
+  font-weight: 700;
+  line-height: 28px;
+  transition: all 0.4s;
+
+   &:hover {
+      color: #fff;
+      background-color: #363636;
+    }
 }
