@@ -1,0 +1,113 @@
+@media (max-width: 360px) {
+  #cards {
+    max-width: 300px;
+    height: 500px;
+  }
+
+  #media-page {
+    max-width: 300px;
+  }
+
+  #new-box {
+    max-width: 290px;
+    padding: 10px 5px;
+  }
+
+  #title-page {
+    font-size: 20px;
+  }
+
+  #summary-page {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+#container {
+  margin: 0;
+  padding: 0;
+  max-width: max-content;
+}
+
+.cards {
+  &__published-date {
+    position: relative;
+    color: #363636;
+    opacity: 0.6;
+  }
+
+  &__new-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 58px;
+  }
+
+  &__link-page {
+    margin-left: 168px;
+    position: relative;
+    padding-bottom: 8px;
+    border-bottom: 1px solid transparent;
+    color: #363636;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+    transition: border-color 0.4s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translate(-150%, 50%);
+      background-image: url(../../assets/icons/arrow_left.svg);
+      width: 12px;
+      height: 10px;
+    }
+
+    &:hover {
+      border-color: #363636;
+    }
+  }
+}
+
+#new-box {
+  padding: 0;
+}
+
+#cards {
+  position: relative;
+  margin: -95px 75px 35px;
+  box-shadow: 0px 8px 24px #0000000d;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+}
+
+#media-page {
+  position: relative;
+  background: radial-gradient(circle, rgba(38,64,237,1) 0%, rgba(63,152,241,1) 50%, rgba(252,160,70,1) 100%);
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#title-page {
+  padding-top: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #363636;
+}
+
+#summary-page {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #000000;
+  margin: 50px 75px;
+}

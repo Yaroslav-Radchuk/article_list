@@ -1,0 +1,134 @@
+@media (max-width: 360px) {
+  #card {
+    max-width: 300px;
+    height: 500px;
+  }
+
+  #media {
+    max-width: 300px;
+  }
+
+  #info-box {
+    max-width: 290px;
+    padding: 10px 5px;
+  }
+
+  #title {
+    font-size: 20px;
+  }
+
+  #summary {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.card {
+  &__published-date {
+    position: relative;
+    color: #363636;
+    opacity: 0.6;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      transform: translate(-22.66px, -50%);
+      content: "";
+      width: 90%;
+      height: 90%;
+      background-image: url(../../assets/icons/calendar.svg);
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__title-box {
+    height: 58px;
+    margin-bottom: 20px;
+
+    @media (max-width: 360px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    padding-bottom: 8px;
+    border-bottom: 1px solid transparent;
+    color: #363636;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+    margin-top: auto;
+    transition: border-color 0.4s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: translate(150%, 50%);
+      background-image: url(../../assets/icons/arrow_right.svg);
+      width: 12px;
+      height: 10px;
+    }
+
+    &:hover {
+      border-color: #363636;
+    }
+  }
+}
+
+#card {
+  box-sizing: border-box;
+  box-shadow: 0px 8px 24px #0000000d;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  transition: transform 0.4s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+#media {
+  background: radial-gradient(circle, rgba(38,64,237,1) 0%, rgba(63,152,241,1) 50%, rgba(252,160,70,1) 100%);
+  background-position: center;
+  background-size: cover;
+  max-width: 400px;
+  height: 217px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#info-box {
+  position: relative;
+  padding: 25px;
+}
+
+#date {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+
+#title {
+  color: #363636;
+}
+
+#summary {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #363636;
+  margin-bottom: 20px;
+}
+
+#link {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(-100%);
+}
