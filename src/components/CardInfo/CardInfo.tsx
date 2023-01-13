@@ -32,7 +32,6 @@ export const CardInfo: React.FC = () => {
         <RingLoader
           loading={loading}
           cssOverride={{
-            height: "100%",
             position: "absolute",
             top: "38%",
             left: "44%",

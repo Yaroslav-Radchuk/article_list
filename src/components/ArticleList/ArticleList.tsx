@@ -7,6 +7,7 @@ import { Article } from '../../data/data';
 import { getArticles } from '../../api/api';
 import { ArticleCard } from '../ArticleCard/ArticleCard';
 import { RingLoader } from 'react-spinners';
+import { height } from '@mui/system';
 
 export const ArticleList: React.FC = () => {
   const [articles, setArticles] = useState<Article[] | []>([]);
@@ -35,7 +36,6 @@ export const ArticleList: React.FC = () => {
         <RingLoader
           loading={loading}
           cssOverride={{
-            height: "100%",
             position: "absolute",
             top: "38%",
             left: "44%",
@@ -47,7 +47,7 @@ export const ArticleList: React.FC = () => {
       ) : (
         <Container
         maxWidth={false}
-        sx={{ maxWidth: "1290px" }}
+        sx={{ maxWidth: "1290px", height: '100vh' }}
         id="ListContainer">
           <ArticleFindCard
             setSearch={setInputValue}
