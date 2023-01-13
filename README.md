@@ -1,6 +1,7 @@
 # Articles List
 
-This is a simple application where you can see a lot of articles. To see the demonstration:
+This is a simple application where you can see a lot of articles.
+To see the demonstration: https://yaroslav-radchuk.github.io/article_list/
 
 Main task:
 
