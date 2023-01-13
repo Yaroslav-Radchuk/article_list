@@ -1,6 +1,7 @@
 # Articles List
 
 In this application you can see a lot of articles.
+
 To see the demonstration: https://yaroslav-radchuk.github.io/article_list/
 
 Main task:
