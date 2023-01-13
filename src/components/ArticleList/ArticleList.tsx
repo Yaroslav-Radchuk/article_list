@@ -58,7 +58,7 @@ export const ArticleList: React.FC = () => {
             {articlesFilter.map(item => {
               const summaryCorrect = `${item.summary.slice(0, 150)}...`;
               const titleCorrect = item.title.length > 55
-                ? `${item.title.slice(0, 50)}...`
+                ? `${item.title.slice(0, 48)}...`
                 : item.title;
 
               return (
