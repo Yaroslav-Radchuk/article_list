@@ -2,7 +2,7 @@
 
 In this application you can see and find a lot of articles.
 
-To see the demonstration: https://yaroslav-radchuk.github.io/article_list/
+Click [here](https://yaroslav-radchuk.github.io/article_list/) to see the demonstration.
 
 Main task:
 
@@ -14,4 +14,4 @@ The article with one match in the name is higher than the article with one match
 
 The matched keywords should be highlighted with yellow color.
 
-I used these technologies: React, TypeScript, React Hooks, React Router, Fetch, Material UI, SCSS, NPM.
+I used these technologies: `React`, `TypeScript`, `React Hooks`, `React Router`, `React Spinners`, `Fetch`, `Promise`, `Material UI`, `SCSS`, `NPM`.

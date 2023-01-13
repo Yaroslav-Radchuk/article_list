@@ -1,6 +1,6 @@
-import { Article } from "../data/data";
+import { Article } from '../data/data';
 
-const BASE_URL: string = "https://api.spaceflightnewsapi.net/v3/"
+const BASE_URL: string = 'https://api.spaceflightnewsapi.net/v3/'
 
 export const getArticles = (): Promise<Article[]> => {
   return fetch(`${BASE_URL}articles/`)

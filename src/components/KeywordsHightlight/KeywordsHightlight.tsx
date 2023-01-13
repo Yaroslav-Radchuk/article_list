@@ -10,7 +10,7 @@ type Props = {
 export const KeywordsHightlight: React.FC<Props> = ({ string, filter }) => {
   if (!filter) {
     return string;
-  };
+  }
 
   const regexp = new RegExp(filter, 'ig');
   const match = string?.match(regexp);

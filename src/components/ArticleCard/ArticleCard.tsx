@@ -1,13 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+import './ArticleCard.scss';
+
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import CardContent from '@mui/material/CardContent';
 
-import './ArticleCard.scss';
 import { months } from '../../assets/months';
 import { KeywordsHightlight } from '../KeywordsHightlight/KeywordsHightlight';
-import { Link } from 'react-router-dom';
 
 type Props = {
   id: number;
@@ -34,12 +36,15 @@ export const ArticleCard: React.FC<Props> = ({
     switch (day) {
       case 1:
         return `${day}st`;
-        // break;
+        break;
+
       case 2:
         return `${day}nd`;
+        break;
 
       case 3:
         return `${day}rd`;
+        break;
 
       default:
         return `${day}th`;
@@ -101,7 +106,6 @@ export const ArticleCard: React.FC<Props> = ({
             to={`articles/:${id}`}
             rel="noreferrer"
             className="card__link"
-            
           >
             Read more
           </Link>

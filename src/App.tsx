@@ -1,6 +1,8 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
+
 import './App.css';
-import { NewPage } from './components/NewPage/NewPage';
+
+import { CardInfo } from './components/CardInfo/CardInfo';
 import { ArticleList } from './components/ArticleList/ArticleList';
 import { PageNotFound } from './components/PageNotFound/PageNotFound';
 
@@ -11,8 +13,8 @@ function App() {
         <Route path="/" element={<ArticleList />} />
         <Route path="home" element={<Navigate to="/" replace />} />
         <Route path="articles">
-          <Route index element={<NewPage />} />
-          <Route path=":articleId" element={<NewPage />} />
+          <Route index element={<CardInfo />} />
+          <Route path=":articleId" element={<CardInfo />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
