@@ -1,4 +1,4 @@
-import { Article } from '../data/data';
+import { Article } from '../types/Article';
 
 const BASE_URL: string = 'https://api.spaceflightnewsapi.net/v3/'
 

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import './ArticleList.scss';
 import { Container } from '@mui/material';
 import { ArticleFindCard } from '../ArticleFindCard/ArcticleFindCard';
-import { Article } from '../../data/data';
+import { Article } from '../../types/Article';
 import { getArticles } from '../../api/api';
 import { ArticleCard } from '../ArticleCard/ArticleCard';
 import { RingLoader } from 'react-spinners';

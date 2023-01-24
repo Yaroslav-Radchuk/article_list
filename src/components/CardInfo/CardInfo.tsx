@@ -8,7 +8,7 @@ import { Card, CardContent, CardMedia, Typography } from '@mui/material';
 import RingLoader from 'react-spinners/RingLoader';
 
 import { getArticle } from '../../api/api';
-import { Article } from '../../data/data';
+import { Article } from '../../types/Article';
 
 export const CardInfo: React.FC = () => {
   const { articleId = '0' } = useParams();
